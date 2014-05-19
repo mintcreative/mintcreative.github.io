@@ -1,0 +1,171 @@
+/* Mixins to import from Compass */
+/* Variables */
+/* green for sub-header strip */
+/* line 10, ../compass/minteractive.scss */
+.green {
+  background-color: #0a929a;
+}
+
+/* /Variables */
+/* line 22, ../compass/minteractive.scss */
+body {
+  background: #cecece;
+}
+
+/* line 26, ../compass/minteractive.scss */
+h1 {
+  color: #444;
+}
+
+/* line 30, ../compass/minteractive.scss */
+h2 {
+  color: #605e5e;
+}
+
+/* line 34, ../compass/minteractive.scss */
+h3 {
+  color: #6c6c6c;
+  font-family: "Varela", Montserrat, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* line 41, ../compass/minteractive.scss */
+header {
+  background: url("../img/header-bg.gif") repeat scroll left top #cecece;
+  padding: 45px 0;
+}
+
+/* line 46, ../compass/minteractive.scss */
+.post-header {
+  height: 80px;
+}
+
+/* line 50, ../compass/minteractive.scss */
+.main-content {
+  margin: 40px 0;
+}
+
+/* line 54, ../compass/minteractive.scss */
+.project-card {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+}
+
+/* line 60, ../compass/minteractive.scss */
+.project-card.wp-blue {
+  border-left: 5px solid #0a7a9a;
+}
+
+/* line 63, ../compass/minteractive.scss */
+.project-card.osx-purple {
+  border-left: 5px solid #9676a1;
+}
+
+/* line 66, ../compass/minteractive.scss */
+.button-row {
+  margin-top: 4%;
+}
+
+/************ buttons **************/
+/* line 72, ../compass/minteractive.scss */
+.button {
+  margin-bottom: 0;
+  padding: 0.4rem 0.5rem 0.4rem 2.4rem;
+  color: #a72b4b;
+}
+
+@media screen and (max-width: 640px) {
+  /* line 78, ../compass/minteractive.scss */
+  .button {
+    margin-bottom: 20px;
+  }
+}
+/* line 80, ../compass/minteractive.scss */
+.end a.button:last-child {
+  margin-bottom: 0;
+}
+
+/* line 82, ../compass/minteractive.scss */
+.dl {
+  background: url("../img/button-dl-bg.png") 10px 8px no-repeat #efeeee;
+}
+
+/* line 83, ../compass/minteractive.scss */
+.gh {
+  background: url("../img/button-gh-bg.png") 10px 8px no-repeat #efeeee;
+}
+
+/************ /buttons **************/
+/************ tags **************/
+/* line 88, ../compass/minteractive.scss */
+.tag {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  height: 22px;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 6px 17px 5px 5px;
+}
+/* line 96, ../compass/minteractive.scss */
+.tag span {
+  color: #ffffff;
+  display: block;
+  font-size: 0.7rem;
+  line-height: 0.7rem;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 640px) {
+  /* line 105, ../compass/minteractive.scss */
+  .tag {
+    position: relative;
+    display: inline-block;
+    right: auto;
+    top: auto;
+  }
+}
+/* line 108, ../compass/minteractive.scss */
+.tag.wp {
+  background: url("../img/tag-wp-bg.png") right top no-repeat #0a7a9a;
+}
+
+/* line 111, ../compass/minteractive.scss */
+.tag.osx {
+  background: url("../img/tag-osx-bg.png") right top no-repeat #9676a1;
+}
+
+/************ /tags **************/
+/* line 117, ../compass/minteractive.scss */
+pre {
+  background: none repeat scroll 0 0 #303030;
+  color: #F2F2F2;
+  overflow: auto;
+  padding: 20px;
+  text-shadow: none;
+  width: 90%;
+  margin: 0 0 20px 0;
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
+}
+
+/* line 131, ../compass/minteractive.scss */
+code, pre {
+  color: #f2f2f2;
+  font-family: Monaco, "Lucida Console", Terminal;
+  font-size: 0.8rem;
+  font-weight: normal;
+  line-height: 1.2rem;
+}
