@@ -1,0 +1,137 @@
+/* Mixins to import from Compass */
+@import "compass/css3/border-radius"; 
+
+
+/* Variables */
+
+/* green for sub-header strip */    
+$green:#0a929a;
+
+.green{
+	background-color:$green;
+	}
+
+$wp-blue:#0a7a9a;
+$osx-purple:#9676a1;
+
+
+/* /Variables */
+
+
+
+body{
+	background: #cecece;
+}
+
+h1{
+	color:#444;
+}
+
+h2{
+	color: #605e5e;
+}
+
+h3{
+	color:#6c6c6c;
+	font-family: "Varela", Montserrat, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+
+	header{
+	background: url("../img/header-bg.gif") repeat scroll left top #CECECE;
+    padding: 45px 0;
+	}
+
+	.post-header{
+		height:80px;
+	}
+
+	.main-content{
+		margin:40px 0;
+	}
+
+	.project-card{
+		position: relative;
+	background: #fff;
+	padding: 20px;
+}
+
+.project-card.wp-blue{
+	border-left: 5px solid $wp-blue;
+}
+.project-card.osx-purple{
+	border-left: 5px solid $osx-purple;
+}
+.button-row{
+
+	margin-top: 4%;
+}
+
+/************ buttons **************/
+.button{
+	margin-bottom: 0;
+	padding:0.4rem 0.5rem 0.4rem 2.4rem;
+	color: #a72b4b;
+}
+@media screen and (max-width: 640px){
+	.button{margin-bottom: 20px;}
+}
+.end a.button:last-child{margin-bottom: 0;}
+
+.dl{background:url("../img/button-dl-bg.png")10px 8px no-repeat #efeeee;}
+.gh{background:url("../img/button-gh-bg.png")10px 8px no-repeat #efeeee;}
+
+/************ /buttons **************/
+
+/************ tags **************/
+.tag{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	height: 22px;
+	@include border-left-radius(3px);
+	padding: 6px 17px 5px 5px;
+
+		span{
+			color: #ffffff;
+			display: block;
+			font-size: 0.7rem;
+			line-height: 0.7rem;
+			text-transform: uppercase;
+		}
+}
+@media screen and (max-width: 640px){
+	.tag{position: relative;display: inline-block;right: auto;top: auto;}
+}
+
+.tag.wp{
+	background:url("../img/tag-wp-bg.png")right top no-repeat $wp-blue;
+}
+.tag.osx{
+	background:url("../img/tag-osx-bg.png")right top no-repeat $osx-purple;
+}
+/************ /tags **************/
+
+
+pre {
+    background: none repeat scroll 0 0 #303030;
+    color: #F2F2F2;
+    overflow: auto;
+    padding: 20px;
+    text-shadow: none;
+    width: 90%;
+    margin: 0 0 20px 0;
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+code, pre {
+    color: #f2f2f2;
+    font-family: Monaco, "Lucida Console", Terminal;
+    font-size: 0.8rem;
+    font-weight: normal;
+    line-height: 1.2rem;
+}
